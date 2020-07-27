@@ -1,0 +1,206 @@
+body {
+  margin: 0%;
+  padding: 0%;
+  text-align: center;
+}
+hr {
+  width: 10%;
+  size: 100px;
+  margin: 5rem auto;
+  border: none;
+  border-top: 8px dotted rgb(80, 79, 79);
+}
+#intro {
+  color: #fff;
+  position: relative;
+  padding-top: 150px;
+  background: #222831;
+}
+.name {
+  /* display: inline-block; */
+  width: fit-content;
+  height: fit-content;
+  margin: auto;
+}
+.cloud {
+  position: absolute;
+  width: 200px;
+}
+.cloud-1 {
+  right: 400px;
+  top: 70px;
+}
+.cloud-2 {
+  left: 400px;
+  top: 300px;
+}
+.header {
+  padding: 1rem 2rem;
+  width: fit-content;
+  margin: auto;
+}
+.header h1 {
+  margin: 0;
+  font-size: 5rem;
+  font-family: "Sacramento", cursive;
+}
+.header p,
+.middle-section p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2rem;
+}
+.header p {
+  margin: 0;
+}
+
+.mountain {
+  width: 50%;
+  margin-top: 5rem;
+}
+
+.middle-section {
+  background-color: #eaffd0;
+  padding-top: 3rem;
+}
+
+.middle-section h2,
+.middle-section h1 {
+  /* padding: 5rem; */
+  font-family: Arial, Helvetica, sans-serif;
+  color: #00adb5;
+}
+
+.profile {
+  width: 50%;
+  margin: auto;
+}
+.profile * {
+  margin-bottom: 1rem;
+}
+.container {
+  width: 200px;
+  height: 200px;
+  margin: auto;
+  position: relative;
+  overflow: hidden;
+}
+.me {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* border-radius: 50%; */
+  margin: 0;
+  overflow: hidden;
+}
+.slide {
+  margin: 0;
+  background: #000;
+  color: #fff;
+  position: absolute;
+  top: -100%;
+  left: 0;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  opacity: 0.8;
+  transition: 0.6s ease;
+}
+.slide p {
+  margin: 0;
+  width: 80%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.container:hover .slide {
+  top: 0;
+}
+.skills {
+  margin-top: 2rem;
+}
+.skill-row {
+  width: 50%;
+  text-align: left;
+  margin: 100px auto;
+  line-height: 1.7;
+}
+.computer,
+.chillies {
+  width: 25%;
+  border-radius: 50%;
+}
+
+.computer {
+  float: left;
+  margin-right: 3rem;
+}
+
+.chillies {
+  float: right;
+  margin-left: 3rem;
+}
+.contact-me {
+  width: 50%;
+  margin: auto;
+  padding: 2rem 0;
+  text-align: center;
+}
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  color: #fff;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  background: linear-gradient(rgb(72, 165, 134), teal);
+}
+.btn:hover {
+  box-shadow: 0px 0px 5px #333;
+  background: rgb(49, 129, 129);
+}
+.bottom-container {
+  background: #222831;
+  padding: 2rem 0 0.5rem;
+}
+.bottom-container p {
+  color: rgb(165, 165, 165);
+  font-size: 1.2rem;
+}
+.footer-link {
+  color: rgb(165, 165, 165);
+  text-decoration: none;
+  font-size: 1.2rem;
+  margin: auto 1rem;
+}
+.footer-link:hover {
+  color: #fff;
+}
+@media (max-width: 700px) {
+  #intro {
+    padding-top: 50px;
+  }
+  .header {
+    margin: 2rem auto;
+  }
+  .cloud {
+    position: static;
+    display: block;
+    margin: auto;
+  }
+  .mountain {
+    width: 100%;
+  }
+  .profile,
+  .skill-row,
+  .contact-me {
+    width: 80%;
+    text-align: center;
+  }
+  .computer,
+  .chillies {
+    width: 50%;
+    float: none;
+    margin: auto;
+  }
+}
